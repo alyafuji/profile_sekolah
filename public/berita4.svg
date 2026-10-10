@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 450">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b6b57"/><stop offset="1" stop-color="#2fd0c0"/></linearGradient></defs>
+<rect width="940" height="450" fill="url(#g)"/>
+<circle cx="840" cy="50" r="140" fill="#fff" opacity="0.08"/><circle cx="80" cy="430" r="160" fill="#fff" opacity="0.08"/>
+<path d="M470 320 C330 300 340 150 480 110 C620 150 610 300 470 320 Z" fill="#fff"/><path d="M470 320 V160" stroke="#0b6b57" stroke-width="8" fill="none"/><path d="M470 250 L520 210 M470 215 L420 180" stroke="#0b6b57" stroke-width="6" fill="none"/>
+<text x="470" y="400" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="700" fill="#fff">Gerakan 5R & 3R</text>
+</svg>

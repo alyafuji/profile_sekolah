@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-figtree), system-ui, -apple-system, sans-serif;
+  --font-display: var(--font-sora), system-ui, -apple-system, sans-serif;
+}
+
+@theme {
+  /* Brand Palettes: Ocean & Academic Trust */
+  --color-ocean-950: #04243a;
+  --color-ocean-900: #06324d;
+  --color-ocean-800: #0a4a73;
+  --color-ocean-600: #0f7cb0;
+  --color-ocean-500: #1a95cf;
+  
+  /* Accents */
+  --color-aqua-400: #2fd0c0;
+  --color-aqua-500: #14b8a6;
+  --color-foam: #eaf8fb;
+  --color-sun: #f6c026;
+  --color-sun-hover: #e0ac18;
+  
+  /* Semantic Tokens */
+  --color-ink: #10242f;
+  --color-ink-muted: #475569;
+  --color-coral: #ef4444;
+  --color-leaf: #10b981;
+}
+
+/* Base Styles & Accessibility Fixes */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--color-ink);
+  background-color: #ffffff;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus Ring Standard (Priority 1: WCAG Accessibility) */
+:focus-visible {
+  outline: 3px solid var(--color-sun);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Background Pattern */
+.pola-titik {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Reduced Motion Override (Prevent Motion Sickness) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
